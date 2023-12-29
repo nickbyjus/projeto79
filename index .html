@@ -1,0 +1,53 @@
+<html>
+<head>  
+<link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript">
+</script>
+
+</head>
+<body class="bodyBackgorund">
+
+<div align="center">
+<h1>Paint</h1>
+
+    <canvas id="myCanvas" width="800" height="600"></canvas>
+        <br><br >
+
+    <button class="btn btn_success"onclick="addTop()">Adicionar Sugestão</button><br></br>
+
+    function getMenu(){
+        var htmldata="";
+        menuListArray.sort();
+        for(var i=0;i<menuListArray.length;i++){
+            htmldata=htmldata+ menuListArray[i] + '<br>'
+        }
+        document.getElementById("displayMenu").innerHTML = htmldata;
+    } 
+    
+    function addItem(){
+        var htmldata="":
+        var imgtags='<img id="im1" src="images/pizzaImg.png"/>'
+        var item=document.getElementById("addItem").value;
+        menuListArray.sort();
+        htmldata=data=""
+        for(var i=0;i<menuListArray.legth;i++){}
+
+        
+        document.getElementByIdId("displayAddedMenu").innerHtml = htmldata;
+
+    }
+    
+
+    function addTop(){
+        var item=document.getElementById("addItem").valuemenuListArray.push(item);
+        addItem();
+    }
+
+    
+
+
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
